@@ -1,5 +1,5 @@
 {
-  "name": "phieudu241/hubot-file-brain",
+  "name": "@phieudu241/hubot-file-brain",
   "version": "0.1.0",
   "description": "A simple hubot brain for development that saves to a json file. Derived from file-brain.coffee by dustyburwell.",
   "main": "brain.js",
@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/phieudu241/hubot-file-brain/issues"
   },
-  "homepage": "https://github.com/phieudu241/hubot-file-brain#readme"
+  "homepage": "https://github.com/phieudu241/hubot-file-brain#readme",
+  "dependencies": {}
 }
