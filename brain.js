@@ -11,6 +11,12 @@ module.exports = function (robot) {
     return msg.send('Brain loaded');
   });
 
+  if (process.env.TRIGGER_BRAIN_LOAD_TIMEOUT) {
+    setTimeout(function () {
+      robot.brain.emit('loaded', robot.brain.data);
+    }, process.env.TRIGGER_BRAIN_LOAD_TIMEOUT * 1000);
+  }
+
   try {
     data = fs.readFileSync(brainPath, 'utf-8');
     if (data) {
